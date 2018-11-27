@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
+# test
 # /usr/bin/python3.5 /home/blackdoe/Dropbox/TSP/CITI/stage1A/essaisPreliminaires/resultats/P456789.py
 
 # Optimisation de réseau d'antennes: ambiguïtés et SNR critique
 # Premier problème préliminaire: détermination du réseau optimal
 
-from numpy import sqrt, pi, cos, linspace, amax, amin, zeros, where, squeeze
 import matplotlib.pyplot as plt
+from numpy import sqrt, pi, cos, linspace, amax, amin, zeros, where, squeeze
 
 Npoints, N = 1000, 100
 Ndeltas = 2 * N
@@ -72,7 +73,6 @@ plt.semilogy(w, g4(w), label='Cas optimisé: $\delta = {:.3f}$'.format(delta_o))
 
 plt.ylim((1e-4, 1e2))
 plt.title('Cas $P=4$')
-plt.hold(True)
 plt.grid(True)
 plt.legend(loc='upper right', fontsize='small')
 
@@ -134,7 +134,6 @@ plt.semilogy(w, g5(w), label='Cas optimisé: $\delta = {:.3f}$'.format(delta_o))
 
 plt.ylim((1e-4, 1e2))
 plt.title('Cas $P=5$')
-plt.hold(True)
 plt.grid(True)
 plt.legend(loc='upper right', fontsize='small')
 
@@ -205,7 +204,6 @@ plt.semilogy(w, g6(w), label='Cas optimisé: $\delta_1 = {:.3f}, \delta_2 = {:.3
 
 plt.ylim((1e-4, 1e2))
 plt.title('Cas $P=6$')
-plt.hold(True)
 plt.grid(True)
 plt.legend(loc='upper right', fontsize='small')
 
@@ -276,7 +274,6 @@ plt.semilogy(w, g7(w), label='Cas optimisé: $\delta_1 = {:.3f}, \delta_2 = {:.3
 
 plt.ylim((1e-4, 1e2))
 plt.title('Cas $P=7$')
-plt.hold(True)
 plt.grid(True)
 plt.legend(loc='upper right', fontsize='small')
 
@@ -356,7 +353,6 @@ plt.semilogy(w, g8(w), label='Cas optimisé: $\delta_1 = {:.3f}, \delta_2 = {:.3
 
 plt.ylim((1e-4, 1e2))
 plt.title('Cas $P=8$')
-plt.hold(True)
 plt.grid(True)
 plt.legend(loc='upper right', fontsize='small')
 
@@ -436,10 +432,8 @@ plt.semilogy(w, g9(w), label='Cas optimisé: $\delta_1 = {:.3f}, \delta_2 = {:.3
 
 plt.ylim((1e-4, 1e2))
 plt.title('Cas $P=9$')
-plt.hold(True)
 plt.grid(True)
 plt.legend(loc='upper right', fontsize='small')
-
 
 
 # Tracé final de toutes les courbes
